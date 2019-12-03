@@ -1,0 +1,158 @@
+@font-face {
+
+}
+
+* {
+    padding:0;
+    margin:0;
+
+}
+html,body {
+    height:100%;
+    overflow: hidden;
+}
+.home {
+    height:100%;
+    position: absolute;
+    width:100%;
+    overflow: hidden;
+}
+
+
+#cercle1 {
+position: absolute;
+height:115px;
+width:115px;
+border-radius:50%;
+left:50%;
+
+top:25%;
+transition:.5s;
+background: rgb(110, 110, 110);
+}
+#textc1 {
+ 
+    font-size: 30px;
+    cursor:pointer;
+    left:50%;
+    top:50%;
+    opacity:0;
+    transition:.8s;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+#textc2 {
+ 
+    font-size: 30px;
+    cursor:pointer;
+    left:50%;
+    top:50%;
+    opacity:0;
+    transition:.8s;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+#textc3 {
+ 
+    font-size: 30px;
+    cursor:pointer;
+    left:50%;
+    top:50%;
+    opacity:0;
+    transition:.8s;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+#textc4 {
+ 
+    font-size: 30px;
+    cursor:pointer;
+    left:50%;
+    top:50%;
+    opacity:0;
+    transition:.8s;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+#cercle1:hover #textc1 {
+    left: 150%;
+    opacity:1;
+}
+#cercle1:hover {
+    background: #EBFF00;
+}
+
+#cercle2:hover {
+    background: rgb(17, 0, 255);
+}
+#cercle2:hover #textc2 {
+    left: 170%;
+    opacity:1;
+}
+#cercle3:hover {
+    background: #14FF00;
+}
+#cercle3:hover #textc3 {
+    left: 180%;
+    opacity:1;
+}
+#cercle4:hover {
+    background: rgb(251, 0, 255);
+}
+#cercle4:hover #textc4 {
+    left: 200%;
+    opacity:1;
+}
+#cercle2 {
+    position: absolute;
+height:95px;
+width:95px;
+border-radius:50%;
+left:55%;
+transition:.5s;
+top:35%;
+background: rgb(110, 110, 110);
+}
+#cercle3 {
+    position: absolute;
+height:75px;
+width:75px;
+transition:.5s;
+border-radius:50%;
+left:60%;
+top:45%;
+background: rgb(110, 110, 110);
+}
+#cercle4 {
+    position: absolute;
+height:55px;
+width:55px;
+transition:.5s;
+border-radius:50%;
+left: 64%;
+top:53%;
+background: rgb(110, 110, 110);
+}
+#textslide1 {
+width:1200px;
+height:100%;
+font-size:120px;
+position: absolute;
+top:40%;
+text-align:center;
+
+}
+#nomslide1 {
+    top:70%;
+    width:500px;
+    float:right;
+left:40%;
+    font-size:25px;
+    position: absolute;
+    text-align:center;
+}
+
