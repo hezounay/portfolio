@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/css/cars.style.css">
+
+    <title>Document</title>
+  
+    <script src="/js/script.js"></script>
+</head>
+
+<body>
+      {% set url = path('home') %}
+    <a href="{{ url }}"><span style="position:absolute; z-index:300; text-decoration:none; color:red;">Retour</span></a> 
+    <div id="slide1">
+          
+        
+        <span><a href="#presentation">PRESENTATION</a></span>
+        <span><a href="#carac">CARACTERISTIQUES</a></span>
+        <span><a href="#gallery">GALERIE</a></span>
+        <span><a href="#contact">CONTACT</a></span>
+        <div class=" burger ">
+            <div class='bar'></div>
+            <div class='bar'></div>
+            <div class='bar'></div>
+        </div>
+        
+     
+        
+        
+</div>
+    <div id="presentation">
+
+
+        <div class="container">
+
+            <div class="row justify-content-center ">
+                <h1 class="col-auto my-5">PRESENTATION</h1>
+            </div>
+
+            <p class="space">La Mercedes AMG F1 W10 EQ Power+ est la monoplace de Formule 1 engagée par Mercedes Grand
+                Prix dans le cadre du championnat du monde de Formule 1 2019. Elle est pilotée par le Britannique Lewis
+                Hamilton et par le Finlandais Valtteri Bottas. Mercedes est cinq fois consécutives championne du monde
+                des constructeurs et Lewis Hamilton est le champion en titre. Conçue par les ingénieurs James Allison,
+                Aldo Costa et Geoff Willis, la W10 EQ Power+
+                <span id="justpres"> est présentée le 13 février 2019 sur le circuit de
+                    Silverstone en Angleterre.</span></p>
+
+            <div id="box">
+
+                <div id="block2">
+                {% set url = path('mercedes_ham') %}
+                    <a href='{{ url }}'>
+                        <div id="hamilton"> </div>
+                    </a>
+                </div>
+
+                <div id="block3"></div>
+                <div id="block1">    
+                {% set url = path('mercedes_bot') %}
+                    <a href='{{ url }}'>
+                        <div id="bottas"></div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="clear"></div>
+    <div id="carac">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+        <div id="textpneu">
+            <h1>LES PNEUS</h1>
+            <br>
+            <br>
+            <h4>différences de performance entre les différents pneus par tour</h4>
+            <p>C1 to C2: 0.8 - 1.0 seconde</p>
+            <p> C2 to C3: 0.7 seconde</p>
+            <p> C3 to C4: 0.6 seconde</p>
+            <p> C4 to C5: 0.6 seconde</p>
+        </div>
+        <div id='textengine'>
+
+            <h1>Mercedes-AMG F1</h1>
+            <h1> M10 EQ Power+</h1>
+            <br>
+            <br>
+            <p>Configuration: V6 turbo ouvert à 90°, limité à 15 000 tr/min</p>
+            <p> Orientation du moteur: longitudinale</p>
+            <p> Position du moteur: centrale-arrière</p>
+            <p> Boîte de vitesses: longitudinale</p>
+            <p> Nombre de rapports :Semi-automatique à 8 rapports + marche arrière</p>
+        </div>
+        <div id="textpalmares">
+            <h1>PALMARES</h1>
+            <br>
+            <br>
+
+            <h4> Champion du monde constructeurs</h4>
+            <br>
+
+            <p>5 : 2014 - 2015 - 2016 - 2017 - 2018</p>
+            <br>
+            <br>
+
+            <h4>Champion du monde pilotes</h4>
+            <br>
+            <p>2014 - 2015 - 2017 - 2018</p>
+            <p>Lewis Hamilton</p>
+
+
+            <p> 2016</p>
+            <p>Nico Rosberg</p>
+        </div>
+        <div id="textdimension">
+            <h1>Châssis</h1>
+            <br>
+            <br>
+            <p> Monocoque composite moulée en fibre de carbone et nid d'abeilles </p>
+            <p> Dimensions Longueur totale > 5000 mm</p>
+            <p> Largeur globale > 2000 mm</p>
+            <p> Hauteur totale : 950 mm</p>
+        </div>
+    </div>
+    <div id="gallery">
+       <div class="row">
+       
+      <div class="col-3 nico"></div>
+      <div id="nicohover">
+            <div id="chou" class="col-3"></div>
+            <div id="chou2" class="col-3"></div>
+            <div id="chou3" class="col-3"></div>
+          </div>
+          
+      <div class="col-3 lewis2017">  </div> 
+            <div id="lewis2017hover">
+                    <div id="lewis2017_1" class="col-3"></div>
+                    <div id="lewis2017_2" class="col-3"></div>
+                    <div id="lewis2017_3" class="col-3"></div>
+          
+      </div>
+
+      <div class="col-3 bottas2018">
+
+      </div>
+      <div id="bottas2018hover">
+      <div id="lewis2018_1" class="col-3"></div>
+      <div id="lewis2018_2" class="col-3"></div>
+      <div id="lewis2018_3" class="col-3"></div>  </div>   
+      <div class="col-3 lewis2019"></div>
+      <div id="lewis2019hover">
+      <div id="lewis2019_1" class="col-3"></div>
+      <div id="lewis2019_2" class="col-3"></div>
+      <div id="lewis2019_3" class="col-3"></div>  </div>   
+    </div>
+
+        </div>
+       
+    </div>
+<div id="contact"> <div id="map"></div>
+    <div id="contactus">
+       
+        <h1>CONTACT US</h1>
+        <div id="form">
+        <form action="index.html" method="POST">
+            Your Name <label for="name"></label><input type="text" id="name" placeholder="Name">
+            Your Mail  <label for="email"></label><input type="text" id="email" placeholder="Email">
+            Your Message <label for="message"></label><br><textarea id="textarea" placeholder="Message"></textarea> 
+            <br><br>
+             </form>  <input type="submit" value="Submit" id="sub">
+    </div>
+   </div>
+   <div id="social">
+    <a href="https://twitter.com/MercedesAMGF1">  <i class="fab fa-twitter fa-2x mr-4"></i></a>
+   <a href="https://www.facebook.com/MercedesAMGF1/">   <i class="fab fa-facebook-square fa-2x mr-4"></i></a>  
+   <a href="https://www.instagram.com/mercedesamgf1/?hl=fr"> <i class="fab fa-instagram fa-2x mr-4"></i></a>
+   <a href="https://www.youtube.com/user/MERCEDESAMGPETRONAS"> <i class="fab fa-youtube fa-2x mr-4"></i></a>
+</div>
+</div>
+<script> src="script.js"</script>
+</body>
+
+</html>

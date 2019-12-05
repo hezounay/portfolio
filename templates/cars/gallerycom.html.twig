@@ -1,0 +1,336 @@
+<div class="row">
+
+        <div class="col-6 test1">
+            <div id="nico"></div>
+    
+        </div>
+    
+        <div class="col-6 test2">
+            <div id="lewis2017"></div>
+    
+        </div>
+        <div class="col-6 test3">
+            <div id="bottas2018"></div>
+        </div>
+        <div class="col-6 test4">
+            <div id="lewis2019"></div>
+        </div>
+        <div id="chou" class="col-6"></div>
+        <div id="chou2" class="col-6"></div>
+        <div id="chou3" class="col-6"></div>
+        <div id="lewis2017_1" class="col-6"></div>
+        <div id="lewis2017_2" class="col-6"></div>
+        <div id="lewis2017_3" class="col-6"></div>
+        <div id="lewis2018_1" class="col-6"></div>
+        <div id="lewis2018_2" class="col-6"></div>
+        <div id="lewis2018_3" class="col-6"></div>
+    </div>
+<style>
+.test1{
+    overflow:hidden;
+    height:50vh;
+    border-right:5px white solid;
+
+   
+}
+#nico{
+    background-image:url(images/gallery/2016/2016filtre.jpg);
+    width:100%;
+    height:100%;
+    background-size:cover;
+    position: absolute;
+    z-index: 10;
+
+    
+}
+.test1:hover + .test2 {
+    display:none;
+    transition:0.5s;
+}
+.test1:hover ~ .test4 {
+    display:none;
+    transition:0.5s;
+}
+.test1:hover ~ .test3 {
+    
+    display:none;
+    transition:0.5s;
+}
+.test2:hover > .test1 {
+    
+    display:none;
+    transition:0.5s;
+}
+.test2:hover + .test4 {
+    
+    display:none;
+    transition:0.5s;
+}
+.test2:hover + .test3 {
+    
+    display:none;
+    transition:0.5s;
+}
+.test1:hover ~ #chou{
+    display:block;
+    transition:0.5s;
+}
+.test1:hover ~ #chou2{
+    display:block;
+    transition:0.5s;
+}
+.test1:hover ~ #chou3{
+    display:block;
+    transition:0.5s;
+}
+.test2:hover ~ #lewis2017_1{
+    display:block;
+    transition:0.5s;
+}
+.test2:hover ~ #lewis2017_2{
+    display:block;
+    transition:0.5s;
+}
+.test2:hover ~ #lewis2017_3{
+    display:block;
+    transition:0.5s;
+}
+.test3:hover ~ #lewis2018_1{
+    display:block;
+    transition:0.5s;
+}
+.test3:hover ~ #lewis2018_2{
+    display:block;
+    transition:0.5s;
+}
+.test3:hover ~ #lewis2018_3{
+    display:block;
+    transition:0.5s;
+}
+
+    
+
+#chou{
+    
+    background-position:center center;
+    background-image:url(images/gallery/2016/2016_4.jpg);
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:0;
+    left:50%;
+    transition:0.5s;
+}
+#chou2{
+    background-image:url(images/gallery/2016/2016_5.jpg);
+    background-position:center center;
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:50%;
+    left:50%;
+    border-top:5px white solid;
+    transition:0.5s;
+}
+#chou3{
+    background-image:url(images/gallery/2016/2016_3.jpg);
+    
+    background-position:center center;
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:50%;
+    left:0;
+    border-right:5px white solid;
+    border-top:5px white solid;
+    transition:0.5s;
+}
+
+.test2{
+    transition:0.5s;
+    height:50vh;
+}
+#lewis2017{
+    background-image:url(images/gallery/2017/2017filtre.jpg);
+    width:100%;
+    height:100%;
+    left:0;
+    background-size:cover;
+    position: absolute;
+    z-index: 10;
+    transition:0.5s;
+    
+
+    
+}
+#bottas2018{
+    background-image:url(images/gallery/2018/2018filtre.jpg);
+    width:100%;
+    height:100%;
+    left:0;
+    background-size:cover;
+    position: absolute;
+    z-index: 10;
+    transition:0.5s;
+    
+
+    
+}
+#lewis2019{
+    background-image:url(images/gallery/2019/2019filtre.jpg);
+    width:100%;
+    height:100%;
+    left:0;
+    background-size:cover;
+    position: absolute;
+    z-index: 10;
+    transition:0.5s;
+    
+
+    
+}
+
+
+.test3{
+    transition:0.5s;
+   
+    height:50vh;
+    border-right:5px white solid;
+    border-top:5px white solid;
+}
+
+.test4{
+    transition:0.5s;
+    
+    height:50vh;
+    border-top:5px white solid;
+}
+#lewis2017_1{
+    
+    background-position:center center;
+    background-image:url(images/gallery/2017/2017_1.jpg);
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    border-right:5px white solid;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+#lewis2017_2{
+    
+    background-position:center center;
+    background-image:url(images/gallery/2017/2017_3.jpg);
+    
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    border-top:5px white solid;
+    top:50%;
+    left:50%;
+    transition:0.5s;
+}
+#lewis2017_3{
+    background-image:url(images/gallery/2017/2017_2.jpg);
+    background-position:center center;
+    
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:50%;
+    left:0;
+    border-right:5px white solid;
+    border-top:5px white solid;
+    transition:0.5s;
+}
+#lewis2018_1{
+    
+    background-position:center center;
+    background-image:url(images/gallery/2018/2018_1.jpg);
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    border-right:5px white solid;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+#lewis2018_2{
+    
+    background-position:center center;
+    background-image:url(images/gallery/2018/2018_5.jpg);
+    
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    border-top:5px white solid;
+    top:50%;
+    left:50%;
+    transition:0.5s;
+}
+#lewis2018_3{
+    background-image:url(images/gallery/2018/2018_3.jpg);
+    background-position:center center;
+    
+    display:none;
+    height:50%;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:0;
+    left:50%;
+    border-right:5px white solid;
+    border-top:5px white solid;
+    transition:0.5s;
+}
+
+
+
+</style>
+
+
+
+
+
+<div class="row">
+       
+        <div class="col-3 nico"></div>
+        <div id="nicohover">
+              <div id="chou" class="col-3"></div>
+              <div id="chou2" class="col-3"></div>
+              <div id="chou3" class="col-3"></div>
+            </div>
+            
+        <div class="col-3 lewis2017">  </div> 
+              <div id="lewis2017hover">
+                      <div id="lewis2017_1" class="col-3"></div>
+                      <div id="lewis2017_2" class="col-3"></div>
+                      <div id="lewis2017_3" class="col-3"></div>
+            
+        </div>
+  
+        <div class="col-3 bottas2018"></div>
+        <div class="col-3 lewis2019"></div>
+        
+       
+        <div id="lewis2018_1" class="col-6"></div>
+        <div id="lewis2018_2" class="col-6"></div>
+        <div id="lewis2018_3" class="col-6"></div>  
+  
+          </div>

@@ -1,0 +1,986 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+
+}
+
+
+#slide1 {
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/images/slide1code.jpg);
+    background-size: cover;
+    background-position: center, center;
+    overflow:hidden;
+   
+}
+.burger{
+    width:100px;
+    
+    display: none;
+    height:70px;
+    position: absolute;
+    margin-left:15px;
+    margin-top: 15px; 
+}
+.bar{
+    width:50px;
+    border-radius:5px;
+    margin-bottom:8px;
+    height:10px;
+    background-color:white;
+    
+    
+}
+@media all and (max-width:1577px){
+        .burger{
+            display:block;
+        }
+        span a{
+            display: none;
+        }
+    }
+
+#slide1 span {
+    font-family: 'Orbitron', sans-serif;
+    top: 90%;
+    font-size: 25px;
+    position: absolute;
+    
+
+}
+
+#slide1 span a {
+    color: #009a96;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+
+#slide1 span a:hover {
+    color: #fcf602;
+}
+
+#slide1 span:nth-child(1) {
+    left: 25%;
+
+}
+
+#slide1 span:nth-child(2) {
+    left: 40%;
+
+}
+
+#slide1 span:nth-child(3) {
+    left: 60%;
+
+}
+
+#slide1 span:nth-child(4) {
+    left: 70%;
+
+}
+
+#presentation {
+    background-image: url(/img/images/slide2.jpg);
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position:relative;
+    
+}
+
+#presentation h1 {
+    color: #009a96;
+    font-family: 'Orbitron', sans-serif;
+    border: 5px solid #009a96;
+
+
+}
+
+#justpres{
+    text-align:center;
+    color:  #009a96;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing:2px;
+   
+
+    font-size: 18px;
+}
+#presentation p {
+    color: #009a96;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing:2px;
+    text-align: justify;
+
+    font-size: 18px;
+
+
+}
+
+#presentation p.space {
+    line-height: 2;
+}
+
+#box {
+    left: 15%;
+    position: relative;
+    height: 450px;
+    width: 800px;
+   
+
+
+
+
+}
+
+#block3 {
+    height: 400px;
+    width: 10px;
+    background-color: white;
+    float: left;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+
+}
+
+#block1 {
+
+    width: 390px;
+    height: 450px;
+    position: relative;
+
+
+    overflow: hidden;
+    float: left;
+}
+
+#block2 {
+
+    width: 390px;
+    height: 450px;
+    position: relative;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    float: left;
+    overflow: hidden;
+
+
+
+
+}
+
+#hamilton {
+    background-image: url(/img/images/lewis.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    width: 380px;
+    height: 388px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: mercedes;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition:1s;
+
+
+}
+ #hamilton:hover{
+    filter: contrast(250%);
+ }
+
+#bottas {
+    background-image: url(/img/images/valtteri.png);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-100%, -50%);
+    width: 380px;
+    height: 388px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: ferrari;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition:1s;
+
+}
+
+#bottas:hover{
+    filter: contrast(250%);
+ }
+
+@keyframes mercedes {
+    from {
+        left: 0%;
+
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes ferrari {
+    from {
+        left: 0%;
+
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+
+
+#clear {
+    clear: both;
+}
+
+#carac {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-image: url(/img/images/slide3code.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transition: 1s;
+    z-index: 5;
+}
+
+
+
+.circle:hover {
+    z-index: 4;
+}
+
+
+.circle:nth-child(1) {
+    background-image: url(/img/images/slide3_tyres.jpg);
+    background-attachment: fixed;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    clip-path: circle(100px at 0 0);
+   
+}
+
+
+.circle:nth-child(1):hover {
+    background-image: url(/img/images/slide3_tyres.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+
+
+
+    background-repeat: no-repeat;
+    clip-path: circle(1200px at 0 0);
+}
+
+
+.circle:nth-child(2) {
+    background-image: url(/img/images/mercedes-2014-v6-f1-engine.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    
+    
+    clip-path: circle(100px at 100% 0);
+}
+
+.circle:nth-child(2):hover {
+    background-image: url(/img/images/mercedes-2014-v6-f1-engine.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+
+
+    clip-path: circle(1200px at 100% 0);
+}
+
+
+.circle:nth-child(3) {
+    background-image: url(/img/images/ConstructorsHeader.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+
+    clip-path: circle(100px at 100% 100%);
+}
+
+.circle:nth-child(3):hover {
+    background-image: url(/img/images/ConstructorsHeader.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+
+    background-size: cover;
+
+    clip-path: circle(1200px at 100% 100%);
+}
+
+.circle:nth-child(4) {
+    background-image: url(/img/images/slide3_dimensions.jpg);
+    background-attachment: fixed;
+    clip-path: circle(100px at 0 100%);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.circle:nth-child(4):hover {
+    background-image: url(/img/images/slide3_dimensions.jpg);
+    background-attachment: fixed;
+    clip-path: circle(1200px at 0 100%);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+#textpneu {
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    top: 50%;
+    letter-spacing:2px;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 2s;
+}
+
+.circle:nth-child(1):hover ~ #textpneu {
+    opacity: 1;
+}
+
+
+
+.circle:nth-child(2):hover ~ #textengine {
+    opacity: 1;
+}
+
+#textengine {
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    letter-spacing:2px;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 2s;
+
+
+}
+#textpalmares {
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    letter-spacing:2px;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 2s;
+    text-align:center;
+}
+.circle:nth-child(3):hover ~ #textpalmares {
+    opacity: 1;
+}
+#textdimension {
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    top: 50%;
+    letter-spacing:2px;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 2s;
+    text-align:center;
+}
+.circle:nth-child(4):hover ~ #textdimension {
+    opacity: 1;
+}
+#lewishelmet
+{
+   
+    background-repeat: no-repeat;
+    background-image: url(/img/images/lewishelmet.png);
+    width:1024px;
+    filter:grayscale(1);
+    height:683px;
+background-size:cover;
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+    position: absolute;
+    animation-name:lewishelmet;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+
+}
+@keyframes lewishelmet{
+    0%{
+        filter:grayscale(1);
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        background-size:cover;
+    }
+    50%{
+        filter:grayscale(1);
+        background-size:cover;
+       
+    }
+    100% {
+        filter:grayscale(0);
+        background-size:cover;
+        transform:translate(-50%,-50%) scale(0.4);
+       
+        top:16%;
+        
+        
+       
+        
+        
+    }
+}
+#presentationlewis {
+    background-image: url(/img/images/slide2.jpg);
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    
+    
+}
+#presentationlewis p {
+    text-align:center;
+    color:#009a96;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing:2px;
+    font-size:20px;
+    opacity:0;
+    animation-name:lewisp;
+animation-duration:3s;
+animation-delay:5s;
+animation-fill-mode:forwards;
+}
+#presentationlewis h1 {
+    text-align:center;
+    color:#009a96;
+    font-family: 'Orbitron', sans-serif;
+   
+    font-size:30px;
+    opacity:0;
+    animation-name:lewish1;
+    animation-duration:3s;
+    animation-delay:4s;
+    animation-fill-mode:forwards;
+    
+}
+@keyframes lewish1{
+    0%{
+        opacity:0;
+
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes lewisp{
+    0%{
+        opacity:0;
+
+    }
+    100%{
+        opacity:1;
+    }
+}
+.pager a{
+    color:#009a96;
+    text-decoration:none;
+    font-size:25px;
+    border: 5px solid #009a96;
+    position:absolute;
+    opacity:0;
+    padding: 0 5px;
+    animation-name:prev;
+    animation-duration:3s;
+    animation-delay:6s;
+    animation-fill-mode:forwards;
+   
+}
+.pager {
+    position: absolute;
+    left:47%;
+    font-style:none;
+    transition:0.5s;
+}
+.pager li { list-style-type: none;}
+.pager a:hover{
+    color:white;
+    text-decoration:none;
+    border-radius: 15px;
+    border: 5px solid white;
+    
+    transition:1s;
+
+}
+@keyframes prev{
+    0%{
+        opacity:0;
+
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+#bottashelmet
+{
+   
+    background-repeat: no-repeat;
+    background-image: url(/img/images/bottashelmet.png);
+    width:1024px;
+    filter:grayscale(1);
+    height:683px;
+background-size:cover;
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+    position: absolute;
+    animation-name:bottashelmet;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+
+}
+@keyframes bottashelmet{
+    0%{
+        filter:grayscale(1);
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        background-size:cover;
+    }
+    50%{
+        filter:grayscale(1);
+        background-size:cover;
+       
+    }
+    100% {
+        filter:grayscale(0);
+        background-size:cover;
+        transform:translate(-50%,-50%) scale(0.4);
+       
+        top:12%;
+        
+        
+       
+        
+        
+    }
+}
+#gallery{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-image: url(/img/images/slide4.jpg);
+    background-size: cover;
+    
+   
+}
+.nico{
+    background-image:url(/img/images/gallery/2016/2016filtre.jpg);
+    width:300px;
+    height:300px;
+    background-size:cover;
+    float:left;
+    border-bottom:5px #009a96 solid;
+    border-right:5px #009a96 solid;
+    z-index: 10;
+background-position: center center;
+    
+}
+.lewis2017{
+    background-image:url(/img/images/gallery/2017/2017filtre.jpg);
+    width:300px;
+    height:300px;
+    border-right:5px #009a96 solid;
+    background-size:cover;
+    float:left;
+    z-index: 10;
+    transition:0.5s;
+    background-position: center center;
+    border-bottom:5px #009a96 solid;
+    
+}
+.bottas2018{
+    background-image:url(/img/images/gallery/2018/2018filtre.jpg);
+   width:300px;
+    height:300px;
+    border-right:5px #009a96 solid;
+    background-size:cover;
+    float:left;
+    z-index: 10;
+    transition:0.5s;
+    border-bottom:5px #009a96 solid;
+    background-position: center center;
+    
+}
+.lewis2019{
+    background-image:url(/img/images/gallery/2019/2019filtre.jpg);
+    width:300px;
+    height:300px;
+    background-position: center center;
+    background-size:cover;
+   float:left;
+    z-index: 10;
+    transition:0.5s;
+    border-bottom:5px #009a96 solid;
+
+    
+}
+
+.nico:hover ~ #nicohover{
+opacity:1;
+}
+.lewis2017:hover ~ #lewis2017hover{
+    opacity:1;
+}
+.bottas2018:hover ~ #bottas2018hover{
+    opacity:1;
+}
+.lewis2019:hover ~ #lewis2019hover{
+    opacity:1;
+}
+#lewis2017hover{
+    opacity:0;
+    left:10%;
+    top:50%;
+    width:100%;
+    transition:1s;
+    position:absolute;
+}
+#bottas2018hover{
+    opacity:0;
+    left:10%;
+    top:50%;
+    width:100%;
+    transition:1s;
+    position:absolute;
+}
+    
+#nicohover{
+    opacity:0;
+    left:10%;
+    top:50%;
+    width:100%;
+    transition:1s;
+    position:absolute;
+}
+#lewis2019hover{
+    opacity:0;
+    left:10%;
+    top:50%;
+    width:100%;
+    transition:1s;
+    position:absolute;
+}
+#chou{
+    
+    background-position:center center;
+    background-image:url(/img/images/gallery/2016/2016_4.jpg);
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    
+    transition:0.5s;
+}
+#chou2{
+    background-image:url(/img/images/gallery/2016/2016_5.jpg);
+    background-position:center center;
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    margin-left: 500px;
+    top:40%;
+    transition:0.5s;
+}
+
+#chou3{
+    background-image:url(/img/images/gallery/2016/2016_3.jpg);
+    margin-left: 1000px;
+    background-position:center center;
+    opacity:1;
+    border:5px #009a96 solid;
+    height:300px;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:40%;
+    transition:0.5s;
+}
+#lewis2017_1{
+    
+    background-position:center center;
+    background-image:url(/img/images/gallery/2017/2017_1.jpg);
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    
+    transition:0.5s;
+}
+#lewis2017_2{
+    background-image:url(/img/images/gallery/2017/2017_3.jpg);
+    background-position:center center;
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    background-size:cover;
+    float:left;
+    
+    position: absolute;
+    z-index:100;
+    margin-left: 500px;
+    top:40%;
+    transition:0.5s;
+}
+
+#lewis2017_3{
+    background-image:url(/img/images/gallery/2017/2017_2.jpg);
+    margin-left: 1000px;
+    background-position:center center;
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:40%;
+    transition:0.5s;
+}
+#lewis2018_1{
+    
+    background-position:center center;
+    background-image:url(/img/images/gallery/2018/2018_8.jpg);
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    
+    transition:0.5s;
+}
+#lewis2018_2{
+    background-image:url(/img/images/gallery/2018/2018_5.jpg);
+    background-position:center center;
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    background-size:cover;
+    float:left;
+    
+    position: absolute;
+    z-index:100;
+    margin-left: 500px;
+    top:40%;
+    transition:0.5s;
+}
+
+#lewis2018_3{
+    background-image:url(/img/images/gallery/2018/2018_4.jpg);
+    margin-left: 1000px;
+    background-position:center center;
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:40%;
+    transition:0.5s;
+}
+#lewis2019_1{
+    
+    background-position:center center;
+    background-image:url(/img/images/gallery/2019/2019_1.jpg);
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    
+    transition:0.5s;
+}
+#lewis2019_2{
+    background-image:url(/img/images/gallery/2019/2019_2.jpg);
+    background-position:center center;
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    background-size:cover;
+    float:left;
+    
+    position: absolute;
+    z-index:100;
+    margin-left: 500px;
+    top:40%;
+    transition:0.5s;
+}
+
+#lewis2019_3{
+    background-image:url(/img/images/gallery/2019/2019_3.jpg);
+    margin-left: 1000px;
+    background-position:center center;
+    opacity:1;
+    height:300px;
+    border:5px #009a96 solid;
+    float:left;
+    background-size:cover;
+    position: absolute;
+    z-index:100;
+    top:40%;
+    transition:0.5s;
+}
+
+#contact{
+    background-image:url(/img/images/contactfiltre2.jpg);
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center center;
+    position: relative;
+}
+
+#contactus{
+    left:50%;
+    top:30%;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    text-align:center;
+
+}
+#contactus h1{
+    font-size:50px;
+    font-family: 'Orbitron', sans-serif;
+    color:white;
+}
+#form{
+    position: absolute;
+    top:50%;
+    padding-top:500px;
+    left:50%;
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+    font-size:20px;
+    transform:translate(-50%,-50%);
+
+}
+form input{
+    width:500px;
+    margin:20px 0px;
+    background-color:rgba(0,0,0,0);
+    border:none;
+    border-bottom: 3px solid #009a96;
+    
+    
+}
+label{
+    color:white;
+}
+#msg{
+    color:white;
+}
+#email{
+    color:white;
+}
+#name{
+    color:white;
+}
+#sub{
+    clear:both;
+    width:100px;
+}
+#textarea{
+    border:none;
+    background-color:rgba(0,0,0,0);
+    border-bottom: 3px solid #009a96;
+    color:white;
+    width:500px;
+}
+#social {
+    
+    position: absolute;
+    left:50%;
+    top:85%;
+    transform: translate(-50%,-50%);
+}
+#social i {
+color:#009a96;
+}
+#contact .fa-twitter:hover {
+    color:blue;
+    transition:0.5s;
+    }
+    #contact .fa-facebook-square:hover {
+        color:rgb(0, 94, 126);
+        transition:0.5s;
+        }
+        #contact .fa-instagram:hover {
+            color:orangered;
+            transition:0.5s;
+            }
+            #contact .fa-youtube:hover {
+    color:red;
+    transition:0.5s;
+    }
+  
