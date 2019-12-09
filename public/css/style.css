@@ -23,7 +23,7 @@
 }
 html,body {
     height:100vh; 
-    background-image:linear-gradient(#e8e3ef,#e8e3ef);
+    background-image:linear-gradient(to right,#bdc3c7,#f26a6b,#bdc3c7); 
     overflow-X: hidden;
    
 }
@@ -116,7 +116,7 @@ li a span:before, span:after {
     width:100%;
     min-height:100%;
     position:relative;
-    background-image:linear-gradient(#e8e3ef,#e8e3ef);
+    background-image:linear-gradient(to right,#bdc3c7,#495e74,#bdc3c7); 
   
 }
 
