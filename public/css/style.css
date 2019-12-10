@@ -23,10 +23,45 @@
 }
 html,body {
     height:100vh; 
-    background-image:linear-gradient(to right,#bdc3c7,#f26a6b,#bdc3c7); 
+    background-image:linear-gradient(to right,#D3CCE3,#E9E4F0); 
     overflow-X: hidden;
    
 }
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #adadd6;
+  border: 38px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8181c0;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #4f4fa4;
+}
+::-webkit-scrollbar-track {
+  background: #d5d5ea;
+  border: 0px none #ffffff;
+  border-radius: 44px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #d5d5ea;
+}
+::-webkit-scrollbar-track:active {
+  background: #d5d5ea;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 
 .home {
     min-height:100%;
@@ -38,7 +73,7 @@ html,body {
 .nav {
     width:100%;
     height:100px;
-    position:fixed;
+    
     border-bottom:2px black solid;
     text-align:center;
 
@@ -116,26 +151,26 @@ li a span:before, span:after {
     width:100%;
     min-height:100%;
     position:relative;
-    background-image:linear-gradient(to right,#bdc3c7,#495e74,#bdc3c7); 
+    background-image:linear-gradient(to right,#D3CCE3,#E9E4F0); 
   
 }
 
 #title{
-    left:40%;
- width:500px;
+    text-align:center;
+    width:100%;
     font-family: 'formulablack';
     color:black;
     font-size:70px;
     position:relative;
 }
 #title2{
-    left:40%;
- width:500px;
+ text-align:center;
+ width:100%;
  padding-bottom:100px;
     font-family: 'formulablack';
     color:black;
     font-size:70px;
-    position:relative;
+
 }
 
 
@@ -262,12 +297,12 @@ display:none;
     overflow:hidden;
     width: 100%;
    
-    height: 100%;
+    height:auto;
     position: relative;
 }
 .watch{
     font-size:20px;
-    background-color:green;
+    background-color:rgb(107, 98, 128);
     color:white;
     width:120px;
     height:35px;
@@ -302,7 +337,7 @@ display:none;
     height:300px;
     transition:.5s;
   
-    border:black solid 3px;
+    border:black solid 5px;
     
     color:white;
 
@@ -312,13 +347,13 @@ display:none;
 }
 .cardbox img {
     width:100%;
-    height:294px;
+    height:290px;
     background-size:cover;
     background-position: center center;
     position:relative;
 }
 .cardbox:hover {
     filter: grayscale(0);
-    border:#FF2800  solid 3px;
+    border:rgb(107, 98, 128)  solid 5px;
 }
 

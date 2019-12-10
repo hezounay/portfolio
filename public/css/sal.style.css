@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+* {
+    padding:0;
+    margin:0;
+}
+body {
+  
+    overflow-x:hidden;
+    background-position:center center;
+background-attachment: fixed;
+background-size:cover;
+    background-image:url(/img/sal_img/bg-turbines.jpg);
+}
+nav {
+    width:100%;
+    height:100px;
+
+}
+nav ul li a {
+   
+    text-decoration:none;
+    color:black;
+    font-family: 'Alatsi', sans-serif;
+    font-size:20px;
+    transition:.5s;
+}
+nav ul li a:hover {
+
+    color:#654c4e;
+
+}
+
+.slide1 {
+
+
+    width:100%;
+  
+    height:80vh;
+    position: relative;
+   
+    
+}
+#eol {
+
+    top:37%;
+    left:50%;
+    transform-origin: 50% 50%;
+    transform:translate(-50%,-50%)  rotate(0deg)  ;
+    position: absolute;
+
+    background-position:center center;
+
+animation-duration: 3s;
+    background-repeat: no-repeat;
+    animation-name:spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+   
+
+}
+#text1 {
+    top:73%;
+    left:50%;
+    font-size:20px;
+    color:white;
+    font-family: 'Alatsi', sans-serif;
+    transform:translate(-50%,-50%);
+    position:absolute;
+}
+#text2 {
+    top:80%;
+    left:50%;
+    font-size:40px;
+    color:white;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    font-family: 'Alatsi', sans-serif;
+}
+@keyframes spin {
+   0% {
+    transform:translate(-50%,-50%) rotate(0deg)  ;
+   }
+   50% {
+    transform:translate(-50%,-50%) rotate(180deg)  ;
+   }
+   100% {
+    transform: translate(-50%,-50%)  rotate(360deg);
+   }
+}
+.slide2 {
+    width:100%;
+    padding-top:4%;
+    height:80vh;
+        font-family: 'Alatsi', sans-serif;
+    background-color:white;
+    position:relative;
+
+} 
+.slide2 h1,h5 {
+    text-align:center;
+    margin-bottom:20px;
+    
+}
+.slide3 {
+    width:100%;
+
+    height:auto;
+        font-family: 'Alatsi', sans-serif;
+    background-color:white;
+    position:relative;
+
+} 
+.slide3 h1,h5 {
+    text-align:center;
+    margin-bottom:20px;
+    
+}
+.slide4 {
+    width:100%;
+height:auto;
+background-color:#654C4E;
+        font-family: 'Alatsi', sans-serif;
+
+    position:relative;
+
+} 
+.para {
+    font-size:25px;
+    color:white;
+
+}
+footer {
+    width:100%;
+    background-color:#463E43;
+    height:10%;
+    font-size:35px;
+    color:white;
+    text-align:center;
+}

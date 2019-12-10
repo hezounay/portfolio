@@ -71,4 +71,16 @@ class HomeController extends AbstractController
           
         ]);
     }
+
+         /**
+     * @Route("/sal", name="sal_home")
+     */
+    public function sal()
+    {
+        return $this->render('sal/index.html.twig', [
+          
+        ]);
+    }
+
+
 }

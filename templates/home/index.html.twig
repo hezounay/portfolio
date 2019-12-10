@@ -4,21 +4,18 @@
 
 {% block body %}
 
-<div class="home"  data-aos="fade-up" data-aos-delay='200' data-aos-duration="2000">
-<ul class="nav nav-pills nav-fill">
+<div class="home">
+<ul class="nav nav-pills nav-fill"  data-sal="slide-right"  data-sal-delay="250"  data-sal-duration="1000">
   <li class="nav-item">
     <a class="nav-link " href="#"><span>About</span></a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#"><span>Projects</span></a>
   </li>
-  <li class="nav-item">
-   </li>
+
  
   
-  <li class="nav-item">
-    <a class="nav-link" href="#"><span>C.V.</span></a>
-  </li> 
+  
     <li class="nav-item">
     <a class="nav-link" href="#"><span>Contact</span></a>
   </li> 
@@ -28,24 +25,24 @@
 
 
 
-<img src="/img/MDtest.png" id="MD" alt="" >
+<img data-sal="slide-left"  data-sal-delay="250"  data-sal-duration="1000" src="/img/MDtest.png" id="MD" alt=""  >
 
 
 </div>
 <div id="about">
 
-  <div id="title" >About me</div>
+  <div id="title"  data-sal="slide-up"  data-sal-delay="250"  data-sal-duration="1000">About me</div>
         <div class="timeline">
             <ul>
                     <li>
-                            <div class="content">
+                            <div class="content"  data-sal="slide-right"  data-sal-delay="250"  data-sal-duration="1000">
                               <h3>Personnal informations</h3>
                                 <p>My name is Maxime, I'm 21 years old and  I live in Belgium. I'm a hard fan of Formula One but I like the most of motorsports. My native language is French but I speak English quite fluently. </p>
                             
                         </li>
                 
                 <li>
-                    <div class="content">
+                    <div class="content"  data-sal="slide-left"  data-sal-delay="250"  data-sal-duration="1000">
                        <h3>Video editor</h3>
                         <p>When I was a kid, I loved creating videos from my favourite games ! I've got a YouTube channel to share my stuff with my friends. That was really fun. </p>
                     </div>
@@ -53,7 +50,7 @@
                 </li>
                
                 <li>
-                    <div class="content">
+                    <div class="content"  data-sal="slide-right"  data-sal-delay="250"  data-sal-duration="1000">
                               <h3>Condorcet</h3>
                         <p>After being graduate at secondary school, I started to study to be a teacher. <br>
                         I stopped that wasn't what I want.</p>
@@ -61,7 +58,7 @@
                     
                 </li>
                 <li>
-                    <div class="content">
+                    <div class="content"  data-sal="slide-left"  data-sal-delay="250"  data-sal-duration="1000">
                       <h3>EPSE</h3>
                         <p> Since 2018, I've discovered the joy of development. I spent nights and nights to try to improve my approach of design by searching what all talents around the world are able to do ! I've still a long journey to be as good as I want but I'm determinated !
                         </p>
@@ -69,14 +66,14 @@
                    
                 </li>
                 <li>
-                    <div class="content">
+                    <div class="content"  data-sal="slide-right"  data-sal-delay="250"  data-sal-duration="1000">
                       <h3>First big exercices</h3>
                         <p>At the end of the 1st year, I had to develop an entire site only with "HTML" and "CSS". That was a really long one but I've learnt a lot doing this exercice.</p>
                     </div>
                   
                 </li>
                 <li>
-                    <div class="content">
+                    <div class="content"  data-sal="slide-left"  data-sal-delay="250"  data-sal-duration="1000">
                        <h3>Last year</h3>
                         <p>Here we are, the last year at school. We eat Symfony, we code Symfony and we sleep Symfony but at the end, I think I found my way. </p>
                     </div>
@@ -90,11 +87,11 @@
 
 
 <div id="projects">
-<div id="title2">Projects</div>
+<div id="title2" data-sal="slide-up"  data-sal-delay="250"  data-sal-duration="1000">Projects</div>
 <div class="container">
   {% set url = path('mercedes_home') %}
 <a href="{{ url }}">
-<div class="cardbox">
+<div class="cardbox" data-sal="slide-right"  data-sal-delay="250"  data-sal-duration="2000"  style="transition:1s;">
 
 <div class="couv"><img src="/img/mercedes.png" alt="image"></div>
 <span class="watch">Watch now !</span>
@@ -102,7 +99,7 @@
 </div></a>
   {% set url = path('acc_home') %}
 <a href="{{ url }}">
-<div class="cardbox">
+<div class="cardbox" data-sal="slide-left"  data-sal-delay="250"  data-sal-duration="2000"  style="transition:1s;">
 
 <div class="couv"><img src="/img/acc.png" alt="image"></div>
 <span class="watch">Watch now !</span>
@@ -110,14 +107,27 @@
 </div></a>
  {% set url = path('spa_home') %}
 <a href="{{ url }}">
-<div class="cardbox">
+<div class="cardbox" data-sal="slide-right"  data-sal-delay="250"  data-sal-duration="2000" style="transition:1s;">
 
 <div class="couv"><img src="/img/spa.png" alt="image"></div>
 <span class="watch">Watch now !</span>
-<span class="titre">2019 - Exercice SVG/CSS - Spa</span>
+<span class="titre">2019 - SVG/CSS Exercice  - Spa</span>
 </div></a>
 
 </div>
+
+
+ {% set url = path('sal_home') %}
+<a href="{{ url }}">
+<div class="cardbox" data-sal="slide-left"  data-sal-delay="250"  data-sal-duration="2000"  style="transition:1s;">
+
+<div class="couv"><img src="/img/sal.png" alt="image"></div>
+<span class="watch">Watch now !</span>
+<span class="titre">2019 - SAL.JS Exercice - Renewable Energy</span>
+</div></a>
+
+</div>
+
 </div>
                            
 {% endblock %}
